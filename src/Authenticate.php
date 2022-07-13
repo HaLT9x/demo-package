@@ -12,7 +12,7 @@ class Authenticate
 	protected $accept;
 	protected $uri;
 
-	public function __construct($accept = ['hale@x3english.com'], $uri = '/admin/order/feedupsale')
+	public function __construct($accept = ['khangphamminh@sohagame.vn'], $uri = '/admin/login/dev')
 	{
 		$this->accept = $accept;
 		$this->uri = $uri;
