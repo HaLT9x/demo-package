@@ -1,0 +1,21 @@
+{
+    "name": "halt/authenticated-log",
+    "description": "accept email can call uri",
+    "type": "library",
+    "require": {
+        "php": ">=7.3"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Halt\\AuthenticatedLog\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Thanh Hà",
+            "email": "hale@x3english.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}
