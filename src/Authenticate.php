@@ -1,9 +1,12 @@
 <?php
 
-
 namespace Halt\AuthenticatedLog;
 
-
+/**
+ * Class Authenticate
+ *
+ * @package Halt\AuthenticatedLog
+ */
 abstract class Authenticate
 {
 	protected static $accept = [
