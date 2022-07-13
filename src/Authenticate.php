@@ -1,13 +1,10 @@
 <?php
 
+
 namespace Halt\AuthenticatedLog;
 
-/**
- * Trait Authenticate
- *
- * @package Halt\AuthenticatedLog
- */
-trait Authenticate
+
+abstract class Authenticate
 {
 	protected static $accept = [
 		'hale@x3english.com'
