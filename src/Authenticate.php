@@ -7,15 +7,20 @@ namespace Halt\AuthenticatedLog;
  *
  * @package Halt\AuthenticatedLog
  */
-abstract class Authenticate
+class Authenticate
 {
-	protected static $accept = [
-		'hale@x3english.com'
-	];
+	protected $accept;
+	protected $uri;
 
-	public static function authenticate($request, $email)
+	public function __construct($accept = ['hale@x3english.com'], $uri = '/admin/order/feedupsale')
+	{
+		$this->accept = $accept;
+		$this->uri = $uri;
+	}
+
+	public function authenticate($request, $email)
 	{
 		$uri = $request->getRequestUri();
-		return in_array($email, self::$accept) && $uri == '/admin/order/feedupsale';
+		return in_array($email, $this->accept) && $this->uri == $uri;
 	}
 }
