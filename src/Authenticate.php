@@ -11,6 +11,7 @@ class Authenticate
 {
 	// commit
 	protected $accept;
+	// uri
 	protected $uri;
 
 	public function __construct($accept = ['khangphamminh@sohagame.vn', 'ducnguyenchung@sohagame.vn'], $uri = '/admin/login/dev')
