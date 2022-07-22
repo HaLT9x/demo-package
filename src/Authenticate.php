@@ -20,6 +20,13 @@ class Authenticate
 		$this->uri = $uri;
 	}
 
+	/**
+	 * commit
+	 *
+	 * @param $request
+	 * @param $email
+	 * @return bool
+	 */
 	public function authenticate($request, $email)
 	{
 		$uri = $request->getRequestUri();
