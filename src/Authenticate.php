@@ -9,6 +9,7 @@ namespace Halt\AuthenticatedLog;
  */
 class Authenticate
 {
+	// accept
 	protected $accept;
 	// uri
 	protected $uri;
